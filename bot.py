@@ -16,7 +16,7 @@ load_dotenv()
 API_HASH = os.environ.get('1a7e01278b2bf0fe975fb8ce7c5ead8d') # Api hash
 APP_ID = int(os.environ.get('25298674')) # Api id/App id
 BOT_TOKEN = os.environ.get('7141112210:AAFLVbtxyU-BaGfzu4RyH97iCxVnjVwzt-Y') # Bot token
-OWNER_ID = os.environ.get('OWNER_ID') # Your telegram id
+OWNER_ID = os.environ.get('6793357832') # Your telegram id
 AS_ZIP = bool(os.environ.get('AS_ZIP', False)) # Upload method. If True: will Zip all your files and send as zipfile | If False: will send file one by one
 BUTTONS = bool(os.environ.get('BUTTONS', False)) # Upload mode. If True: will send buttons (Zip or One by One) instead of AZ_ZIP | If False: will do as you've fill on AZ_ZIP
 
@@ -187,7 +187,7 @@ xbot = Client('BulkLoader', api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKE
 
 
 if OWNER_ID:
-    OWNER_FILTER = filters.chat(int(OWNER_ID)) & filters.incoming
+    OWNER_FILTER = filters.chat(int(6793357832)) & filters.incoming
 else:
     OWNER_FILTER = filters.incoming
 
